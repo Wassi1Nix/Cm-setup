@@ -3,90 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In-stream Ads</title>
+    <title>In-Stream Ads</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
             margin: 0;
-            padding: 20px;
-            text-align: center;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+        }
+        .header img {
+            height: 30px;
+            margin-right: 10px;
         }
         .container {
-            background: #1e1e1e;
             padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            text-align: left;
-            width: 320px;
-        }
-        .video-container {
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
             text-align: center;
         }
-        .video {
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .video-container video {
             width: 100%;
             border-radius: 10px;
         }
-        .text {
-            padding: 10px;
-            font-size: 14px;
+        .info-box {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            margin: 20px auto;
+            max-width: 400px;
         }
-        .setup-button {
-            display: block;
-            background-color: #1877F2;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 10px;
-        }
-        .icon {
-            width: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        .header {
+        .info-box h2 {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 5px;
+        }
+        .info-box p {
+            font-size: 14px;
+            color: #333;
+        }
+        .monetization {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+        .monetization img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .monetization-text {
+            flex: 1;
+        }
+        .setup-button {
+            background-color: #1877f2;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <h2>In-stream Ads</h2>
-    <p>Currently invitation-only while in development.</p>
+    <div class="header">
+        <img src="facebook-logo.png" alt="Facebook Logo"> 
+        <h2>In-stream ads</h2>
+    </div>
 
     <div class="container">
+        <h1>Learn more about the content monetisation programme</h1>
+        <p>It combines Ads on Reels, in-stream ads and Performance Bonus into one unified programme. It's currently invitation-only while in development.</p>
+
         <div class="video-container">
-            <div class="header">Simplify how you earn from Facebook</div>
-            <p>You can experience In-stream Ads.</p>
-            <div class="header">Content monetization</div>
-            <p>Earn money from Facebook for all your eligible content.</p>
-            <video class="video" controls>
+            <video controls>
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
-        <div class="text">
-            <div class="header">Track earnings all in one place</div>
-            <p>No more jumping between programs. Just go to your professional dashboard at any time to see how much you've earned.</p>
-        </div>
+        <div class="info-box">
+            <h2>Track earnings all in one place</h2>
+            <p>No more jumping between programmes. Just go to your professional dashboard at any time to see how much you've earned.</p>
 
-        <div class="text">
-            <div class="header">Available to set up</div>
-            <p>
-                <img src="icon.png" class="icon">Content monetization
-            </p>
-            <p>Earn money from Facebook for all your well-performing, eligible content.</p>
-            <a href="#" class="setup-button">Set up</a>
+            <div class="monetization">
+                <img src="icon.png" alt="Content Monetization">
+                <div class="monetization-text">
+                    <strong>Content monetisation</strong>
+                    <p>You can earn money on original, well-performing content. This includes eligible public reels, videos, photos, and text posts.</p>
+                </div>
+                <button class="setup-button">Set Up</button>
+            </div>
         </div>
     </div>
 
