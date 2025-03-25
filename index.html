@@ -9,44 +9,85 @@
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: white;
+            margin: 0;
             padding: 20px;
+            text-align: center;
         }
         .container {
             background: #1e1e1e;
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+        }
+        .card {
+            background: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
         }
         .button {
-            display: inline-block;
+            display: block;
             background-color: #1877F2;
             color: white;
-            padding: 10px 20px;
+            padding: 10px;
             border-radius: 5px;
-            text-decoration: none;
+            text-align: center;
             font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .logo {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .video-container {
+            background: black;
+            height: 200px;
+            border-radius: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
 
+    <h2>In-stream Ads</h2>
+    <p>Currently invitation-only while in development.</p>
+
     <div class="container">
-        <h2>In-stream Ads</h2>
-        <p>Currently invitation-only while in development.</p>
+        <div class="card">
+            <h3>Simplify how you earn from Facebook</h3>
+            <p>You can experience In-stream Ads, Ads on content.</p>
 
-        <h3>Simplify how you earn from Facebook</h3>
-        <p>You can experience In-stream Ads and other monetization options.</p>
+            <h4>Content monetization</h4>
+            <p>Earn money from Facebook for all your eligible content.</p>
 
-        <h3>Content Monetization</h3>
-        <p>Earn money from Facebook for all your eligible content.</p>
+            <div class="video-container">
+                <!-- Placeholder for video -->
+                <p style="color: white; text-align: center; line-height: 200px;">[Video Preview]</p>
+            </div>
 
-        <h3>Track earnings all in one place</h3>
-        <p>No more jumping between programs. Just go to your professional dashboard at any time to see how much you've earned.</p>
+            <p><strong>Explore new ways to earn</strong><br>
+            You can earn money on original, well-performing content.</p>
 
-        <h3>Available to set up</h3>
-        <p>Earn money from Facebook for all your well-performing, eligible content.</p>
+            <a href="#" class="button">Get started</a>
+        </div>
+    </div>
 
-        <a href="#" class="button">Set up</a>
+    <h3>Track earnings all in one place</h3>
+    <p>No more jumping between programs. Just go to your professional dashboard at any time to see how much you've earned.</p>
+
+    <h3>Available to set up</h3>
+    <div class="container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" class="logo">
+            <strong>Content monetization</strong>
+            <p>Earn money from Facebook for all your well-performing, eligible content.</p>
+            <a href="#" class="button">Set up</a>
+        </div>
     </div>
 
 </body>
