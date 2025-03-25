@@ -3,101 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In-Stream Ads</title>
+    <title>In-Stream Ads | Meta</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
+        /* Header */
         .header {
             display: flex;
             align-items: center;
-            padding: 10px;
+            justify-content: space-between;
+            padding: 15px 20px;
             background-color: #ffffff;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
         .header img {
             height: 30px;
-            margin-right: 10px;
         }
+
+        /* Main Container */
         .container {
             padding: 20px;
             text-align: center;
+            max-width: 600px;
+            margin: auto;
         }
+
         h1 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
+
         p {
             font-size: 16px;
             color: #555;
-            margin-top: 5px;
+            line-height: 1.5;
         }
+
+        /* Video Section */
         .video-container {
             width: 100%;
-            max-width: 300px;
+            max-width: 350px;
             margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .video-container video {
             width: 100%;
-            border-radius: 10px;
+            display: block;
         }
+
+        /* Info Box */
         .info-box {
-            background-color: #f8f8f8;
-            padding: 15px;
-            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: left;
-            margin: 20px auto;
-            max-width: 400px;
+            margin-top: 20px;
         }
+
         .info-box h2 {
             font-size: 18px;
             font-weight: bold;
+            margin-bottom: 5px;
         }
+
         .info-box p {
-            font-size: 14px;
+            font-size: 15px;
             color: #333;
         }
+
+        /* Monetization Box */
         .monetization {
             display: flex;
             align-items: center;
-            background-color: #ffffff;
-            padding: 10px;
+            background-color: #f8f8f8;
+            padding: 12px;
             border-radius: 10px;
             border: 1px solid #ddd;
             margin-top: 10px;
         }
+
         .monetization img {
             width: 40px;
-            margin-right: 10px;
+            margin-right: 12px;
         }
+
         .monetization-text {
             flex: 1;
         }
+
         .setup-button {
             background-color: #1877f2;
             color: #fff;
-            padding: 5px 10px;
+            padding: 6px 14px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .setup-button:hover {
+            background-color: #165ab6;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <div class="header">
-        <img src="facebook-logo.png" alt="Facebook Logo"> 
         <h2>In-stream ads</h2>
+        <img src="facebook-logo.png" alt="Facebook Logo"> 
     </div>
 
+    <!-- Main Content -->
     <div class="container">
         <h1>Learn more about the content monetisation programme</h1>
         <p>It combines Ads on Reels, in-stream ads and Performance Bonus into one unified programme. It's currently invitation-only while in development.</p>
 
+        <!-- Video Section -->
         <div class="video-container">
             <video controls>
                 <source src="video.mp4" type="video/mp4">
@@ -105,10 +149,12 @@
             </video>
         </div>
 
+        <!-- Information Box -->
         <div class="info-box">
             <h2>Track earnings all in one place</h2>
             <p>No more jumping between programmes. Just go to your professional dashboard at any time to see how much you've earned.</p>
 
+            <!-- Monetization Section -->
             <div class="monetization">
                 <img src="icon.png" alt="Content Monetization">
                 <div class="monetization-text">
